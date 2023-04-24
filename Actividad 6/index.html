@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title>Gestión de cambios</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+		<h1> <center> Gestión de cambios</center></h1>
+
+	<main>
+		<section>
+			<h2>Métrica de madurez del software</h2>
+			<form id="madurez-form">
+				<label for="agregados">Cantidad de módulos agregados:</label>
+				<input type="number" id="agregados" name="agregados" required>
+				<label for="modificados">Cantidad de módulos modificados:</label>
+				<input type="number" id="modificados" name="modificados" required>
+				<label for="eliminados">Cantidad de módulos eliminados:</label>
+				<input type="number" id="eliminados" name="eliminados" required>
+				<center><input type="submit" value="Calcular"></center>
+			</form>
+			<p id="madurez-result"></p>
+		</section>
+		<section>
+			<h2>Obtener el esfuerzo de Halstead</h2>
+			<form id="halstead-form">
+				<label for="operadores">Cantidad de operadores:</label>
+				<input type="number" id="operadores" name="operadores" required>
+				<label for="operandos">Cantidad de operandos:</label>
+				<input type="number" id="operandos" name="operandos" required>
+				<center><input type="submit" value="Calcular"></center>
+			</form>
+			<p id="halstead-result"></p>
+		</section>
+		<section>
+			<h2>Conversión HTML</h2>
+			<form id="html-form">
+				<label for="texto">Texto a convertir:</label>
+        <input type="text" id="texto" name="texto" required>
+				<center><input type="submit" value="Convertir"></center>
+			</form>
+			<p id="html-result"></p>
+		</section>
+		<section>
+			<h2>Buscar y eliminar</h2>
+			<form id="buscar-form">
+				<label for="nombres">Nombres y edades:</label>
+				<textarea id="nombres" name="nombres" rows="5" required></textarea>
+				<label for="numeros">Lista de números:</label>
+				<input type="text" id="numeros" name="numeros" required>
+				<center><input type="submit" value="Calcular"></center>
+			</form>
+			<p id="buscar-result"></p>
+		</section>
+	</main>
+	<script src="gestion.js"></script>
+</body>
+</html>
